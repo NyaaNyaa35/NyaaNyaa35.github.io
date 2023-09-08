@@ -821,6 +821,8 @@ a.back-to-top:hover, a.back-to-top:focus {
 
 .shot-item img {
   width: 100%;
+  align-items: center;
+  justify-content: center;
 }
 
 .shot-item .overlay {

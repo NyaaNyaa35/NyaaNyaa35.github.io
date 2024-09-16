@@ -136,7 +136,7 @@
               <div class="about-profile">
                 <ul class="admin-profile">
                   <li><span class="pro-title"> Name </span> <span class="pro-detail">Hans Patrick Eko Prasetyo</span></li>
-                  <li><span class="pro-title"> Age </span> <span class="pro-detail">21 Years</span></li>
+                  <li><span class="pro-title"> Age </span> <span class="pro-detail" id="age"></span></li>
                   <li><span class="pro-title"> Country </span> <span class="pro-detail">Indonesia</span></li>
                   <li><span class="pro-title"> e-mail </span> <span class="pro-detail">hapepra@gmail.com</span></li>
                   <li><span class="pro-title"> Phone </span> <span class="pro-detail">+(62) 8971187202</span></li>
@@ -363,6 +363,16 @@
     <script src="assets/js/form-validator.min.js"></script>
     <script src="assets/js/contact-form-script.min.js"></script>
     <script src="assets/js/map.js"></script>
+
+    
+    <script>
+        const birthYear = 2001;
+        const currentYear = new Date().getFullYear();
+
+        const age = currentYear - birthYear;
+
+        document.getElementById('age').textContent = `${age} Years`;
+    </script>
       
   </body>
 </html>
